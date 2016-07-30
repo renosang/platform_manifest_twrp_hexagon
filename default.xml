@@ -15,6 +15,10 @@
            review="gerrit.omnirom.org"
            fetch="https://github.com/omnirom" />
 
+  <remote name="hexagon"
+           fetch="https://github.com/"
+           revision="mm" />
+
   <remote  name="TeamWin"
            review="gerrit.twrp.me"
            fetch="https://github.com/TeamWin" />
@@ -24,7 +28,7 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="android_build" remote="omnirom" revision="android-6.0" groups="pdk" >
+  <project path="build" name="HexagonRom/android_build" remote="hexagon" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -486,7 +490,7 @@
   <!-- project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" /> -->
   <!-- project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" /> -->
   <!-- project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" /> -->
-  <project path="vendor/omni" name="android_vendor_omni" remote="omnirom" revision="android-6.0" />
+  <project path="vendor/hexagon" name="HexagonRom/android_vendor_hexagon" remote="hexagon" />
   <!-- project path="packages/apps/MonthCalendarWidget" name="android_packages_apps_MonthCalendarWidget" remote="omnirom" revision="android-6.0" /> -->
 
 </manifest>
